@@ -1,10 +1,11 @@
 import React from "react";
 import "./Contact.css";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+
 const Contact = () => {
   return (
     <>
-      <div className=" contact">
+      <div className="contact">
         <div className="card card0 border-0">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
@@ -21,13 +22,19 @@ const Contact = () => {
             <div className="col-lg-6 col-md-6">
               <div className="card2 d-flex card border-0 px-4 py-5">
                 <div className="row">
-                  <div className="row">
-                    <h6>
-                      Contact With
-                      <BsLinkedin color="blue" size={30} className="ms-2" />
-                      <BsGithub color="black" size={30} className="ms-2" />
-                      <BsFacebook color="blue" size={30} className="ms-2" />
-                    </h6>
+                  <div className="contact-flex">
+                    <h6>Contact With</h6>
+                    <div className="card-flex">
+                      <a href="https://www.youtube.com/watch?v=8cC-JfrTPgI">
+                        <BsLinkedin />
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=8cC-JfrTPgI">
+                        <BsGithub />
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=8cC-JfrTPgI">
+                        <BsFacebook />
+                      </a>
+                    </div>
                   </div>
 
                   <div className="row px-3 mb-4">

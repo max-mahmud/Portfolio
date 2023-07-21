@@ -21,7 +21,7 @@ const Education = () => {
         contentStyle={{ background: "white", color: "black" }}
         contentArrowStyle={{ borderRight: "7px solid  white" }}
         date="2020 - 2022"
-        iconStyle={{ background: "#138781", color: "#fff" }}
+        iconStyle={{ background: "#20bf6b", color: "#fff" }}
         icon={<MdSchool />}
       >
         <h3 className="vertical-timeline-element-title">MCA</h3>
@@ -34,7 +34,7 @@ const Education = () => {
         contentStyle={{ background: "white", color: "black" }}
         contentArrowStyle={{ borderRight: "7px solid  white" }}
         date="2017 - 2020"
-        iconStyle={{ background: "#138781", color: "#fff" }}
+        iconStyle={{ background: "#20bf6b", color: "#fff" }}
         icon={<MdSchool />}
       >
         <h3 className="vertical-timeline-element-title">BCA</h3>

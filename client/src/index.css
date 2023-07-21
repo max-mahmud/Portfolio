@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.footer{
+  background-color: #2f3542;
+  color: #fff;
+}
 
 /*===== DARK MODE ======*/
 #dark {
-  background-color: #5f264a;
-  color: #f4eee0;
+  background-color: #57606f;
+  color: #fff;
 }

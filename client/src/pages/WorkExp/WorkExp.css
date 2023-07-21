@@ -1,6 +1,6 @@
 .work {
     background-color: #1387812a;
-    margin-left: 140px;
+    margin-left: 120px;
   }
   
   .work-exp {
@@ -9,19 +9,36 @@
   
   .work-exp h2 {
     font-weight: bold;
-    color: #1e1e2c;
+    color: #20bf6b;
   }
   
   .work-exp hr {
-    color: #138781;
+    color: #20bf6b;
     width: 400px;
     margin: 10px auto;
   }
   
+    /* ======== DARK MODE ========= */
+    
   .work-exp .vertical-timeline-element-title {
-    color: #138781;
+    color: #20bf6b;
   }
   
   .work-exp .vertical-timeline-element-subtitle {
     color: #1e1e2c78;
+  }
+
+  #dark .work {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  #dark .work h2{
+    color: #20bf6b;
+  }
+  #dark .vertical-timeline::before{
+    background-color: #fff;
+  }
+  #dark .work .vertical-timeline-element-date{
+    color: #fff;
   }

@@ -25,7 +25,7 @@ const Home = () => {
             <BsFillSunFill size={30} />
           )}
         </div>
-          <h2>Hi I'm Mahmud</h2>
+          <h2>Hi I'm Mahmud Hossain </h2>
         
           <h1>
             <Typewriter

@@ -1,25 +1,57 @@
 .education {
-    padding: 100px 0px;
+    padding: 50px 0px;
     margin: 50px 0px;
     margin-left: 120px;
     background-color: rgba(128, 128, 128, 0.101);
   }
   
   .education hr {
-    color: #138781;
+    color: #20bf6b;
     width: 400px;
     margin: 10px auto;
   }
   
   .education h2 {
     font-weight: bold;
-    color: #138781;
+    color: #20bf6b;
   }
   
+    /* ======== DARK MODE ========= */
+
   .education .vertical-timeline-element-title {
-    color: #138781;
+    color: #20bf6b;
   }
   
   .education .vertical-timeline-element-subtitle {
     color: #1e1e2c;
+  }
+
+  #dark .education {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  #dark .education h1 {
+    color: #b0a4a4;
+    border-bottom: 2px solid #b0a4a4;
+  }
+
+  #dark .education .vertical-timeline-element-title {
+    color: #20bf6b;
+  }
+  
+  #dark .education .vertical-timeline-element-subtitle {
+    color: #1e1e2c78;
+  }
+
+  #dark .education {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  #dark .education h2{
+    color: #20bf6b;
+  }
+  #dark .education .vertical-timeline-element-date{
+    color: #fff;
   }

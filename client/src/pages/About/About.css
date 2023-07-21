@@ -1,7 +1,7 @@
 .about {
     margin: 30px 0px;
     padding: 20px;
-    margin-left: 150px;
+    margin-left: 120px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   
@@ -21,9 +21,8 @@
   }
   
   .about-content h1 {
-    color: gray;
-    font-family: cursive;
-    border-bottom: 2px solid gray;
+    color: #20bf6b;
+    border-bottom: 2px solid #20bf6b;
     text-align: center;
   }
   .about-content p {
@@ -39,6 +38,6 @@
 }
 
 #dark .about-content h1 {
-  color: #b0a4a4;
-  border-bottom: 2px solid #b0a4a4;
+  color: #20bf6b;
+  border-bottom: 2px solid #20bf6b;
 }

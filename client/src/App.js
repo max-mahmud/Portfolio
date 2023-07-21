@@ -7,6 +7,7 @@ import Education from "./pages/Education/Education";
 import WorkExp from "./pages/WorkExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
 import { useTheme } from "./context/ThemeContext";
+import { Routes } from "react-router-dom";
 
 const App = () => {
   const [theme] = useTheme();
@@ -24,7 +25,7 @@ const App = () => {
           <Contact />
         </div>
       </div>
-      <div className="footer bg-success py-3 ms-3">
+      <div className="footer  py-3 ms-3">
         <h4 className="text-center">Made With 😍 Mahmud &copy; 2023</h4>
       </div>
     </>

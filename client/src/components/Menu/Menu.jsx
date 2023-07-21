@@ -49,18 +49,6 @@ const Menus = ({ toggle }) => {
                   About
                 </Link>
               </div>
-              <div className="nav-link">
-                <Link
-                  to="education"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcReadingEbook />
-                  Education
-                </Link>
-              </div>
 
               <div className="nav-link">
                 <Link
@@ -77,7 +65,7 @@ const Menus = ({ toggle }) => {
 
               <div className="nav-link">
                 <Link
-                  to="projects"
+                  to="project"
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -87,6 +75,20 @@ const Menus = ({ toggle }) => {
                   Projects
                 </Link>
               </div>
+
+              <div className="nav-link">
+                <Link
+                  to="education"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcReadingEbook />
+                  Education
+                </Link>
+              </div>
+              
               <div className="nav-link">
                 <Link
                   to="work"
