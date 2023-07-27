@@ -1,97 +1,101 @@
 .project {
-    margin: 50px 0px;
-    margin-left: 120px;
-    padding: 20px 10px;
-  }
-  
-  .project hr {
-    color: #20bf6b;
-    width: 400px;
-    margin: 10px auto;
-  }
-  
-  .project h2 {
-    font-weight: bold;
-    color: #20bf6b;
-  }
-  
-  #ads {
-    margin: 30px 0px 30px 0px;
-  }
-  
-  #ads .card-notify-badge {
-    position: absolute;
-    left: -10px;
-    top: -20px;
-    background: #f29f67;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: black;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-  
-  .project .card img {
-    height: 170px;
-    width: 100%;
-  }
-  
-  .card-detail-badge {
-    background-color: #e0b50f;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: black;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-  .card-image-overly {
-    font-size: 20px;
-  }
-  .card-image-overly span {
-    display: inline-block;
-    margin-left: 5px;
-  }
-  
-  .project .card:hover {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
-    transition: all .4s ease;
-  }
-  
-  .ad-btn {
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    display: block;
-    text-align: center;
-    background-color: #20bf6b;
-    color: white;
-    border-radius: 80px;
-    font-size: 16px;
-    line-height: 35px;
-    text-decoration: none;
-    margin: 20px auto 20px auto;
-    overflow: hidden;
-    border: 2px solid #20bf6b;
-    position: relative;
-  }
-  
-  .ad-btn:hover {
-    background-color: white;
-    color: #20bf6b;
-    background: transparent;
-    border: 2px solid #20bf6b;
-    transition: all 0.5s ease;
-    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
-  }
+  margin: 50px 0px;
+  /* margin-left: 120px; */
+  padding: 20px 10px;
+}
 
+.project hr {
+  color: #20bf6b;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.project h2 {
+  font-weight: bold;
+  color: #20bf6b;
+}
+
+#ads {
+  margin: 30px 0px 30px 0px;
+}
+
+#ads .card-notify-badge {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background: #f29f67;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.project .card img {
+  height: 170px;
+  width: 100%;
+}
+
+.card-detail-badge {
+  background-color: #e0b50f;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color: black;
+  padding: 4px 7px;
+  font-size: 13px;
+}
+.card-image-overly {
+  font-size: 20px;
+}
+.card-image-overly span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.project .card:hover {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  transition: all 0.4s ease;
+}
+
+.ad-btn {
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  background-color: #20bf6b;
+  color: white;
+  border-radius: 80px;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  margin: 20px auto 20px auto;
+  overflow: hidden;
+  border: 2px solid #20bf6b;
+  position: relative;
+}
+
+.ad-btn:hover {
+  background-color: white;
+  color: #20bf6b;
+  background: transparent;
+  border: 2px solid #20bf6b;
+  transition: all 0.5s ease;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
 
 /* =============================== */
+@media (max-width: 991px) {
+  .md-margin {
+    margin-block: 15px;
+  }
+}
 @media (max-width: 600px) {
   .project {
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
     margin-top: 50px;
   }
   .project hr {
@@ -100,17 +104,20 @@
   .project .card {
     margin-top: 30px;
   }
+  .md-margin {
+    margin-block: 0px;
+  }
   .project .card img {
     height: 200px;
   }
 }
 
-  /* =========Dark mode ======== */
-  #dark .project {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: #f4eee0;
-  }
-  #dark .project .card{
-    background-color: rgba(0, 0, 0, 0.15);
-    color: #f4eee0;
-  }
+/* =========Dark mode ======== */
+#dark .project {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #f4eee0;
+}
+#dark .project .card {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #f4eee0;
+}

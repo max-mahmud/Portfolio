@@ -1,10 +1,9 @@
 .work {
     background-color: #1387812a;
-    margin-left: 120px;
   }
   
   .work-exp {
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
   
   .work-exp h2 {
@@ -36,6 +35,9 @@
   }
   .work hr {
     width: 280px;
+  }
+  .work-exp {
+    padding: 30px 0px;
   }
 }
 

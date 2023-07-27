@@ -6,7 +6,7 @@ import { useTheme } from "../../context/ThemeContext";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Fade from "react-reveal/Fade";
 
-const Home = () => {
+const Home = ({toggle}) => {
   const [theme, setTheme] = useTheme();
   //handle theme
   const handleTheme = () => {
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-fluid home-container" id="home">
+      <div className={`container-fluid ${toggle ? "home-container" : "home-container-less"}`} id="home">
         <div className="container home-content">
           <div className="theme-btn" onClick={handleTheme}>
             {theme === "light" ? <BsFillMoonStarsFill size={30} /> : <BsFillSunFill size={30} />}

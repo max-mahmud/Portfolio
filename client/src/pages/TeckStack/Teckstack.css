@@ -1,7 +1,7 @@
 .techstack {
-    margin-left: 120px;
     margin-top: 60px;
     padding: 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   .techstack hr {
     color: #0fb9b1;
@@ -38,12 +38,13 @@
   .techstack {
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .techstack hr {
     width: 280px;
   }
+  
 }
 
 /* ===========dark============ */

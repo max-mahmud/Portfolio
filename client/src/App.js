@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "./components/layout/Layout";
 import About from "./pages/About/About";
 import TeckStack from "./pages/TeckStack/TeckStack";
@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
+  const [toggle, setToggle] = useState(true);
   const [theme] = useTheme();
 
   return (
@@ -19,18 +20,20 @@ const App = () => {
       <div id={theme}>
         <ToastContainer />
         <MobileNav />
-        <Layout />
+        <Layout toggle={toggle} setToggle={setToggle} />
         <div className="container">
-          <About />
-          <TeckStack />
-          <Project />
-          <Education />
-          <WorkExp />
-          <Contact />
+          <div className={`${toggle ? "all-margin": "less-margin"}`}>
+            <About />
+            <TeckStack />
+            <Project />
+            <Education />
+            <WorkExp />
+            <Contact />
+          </div>
         </div>
       </div>
       <div className="footer  py-3">
-        <h4 className="text-center">Made With 😍 Mahmud &copy; 2023</h4>
+        <h6 className="text-center">Made With 😍 Mahmud &copy; 2023</h6>
       </div>
     </>
   );

@@ -17,7 +17,7 @@ const Project = () => {
         </p>
         {/* card design */}
         <div className="row" id="ads">
-          <div className="col-md-4">
+          <div className="col-md-6 md-margin col-lg-4 ">
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
@@ -44,7 +44,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6 md-margin col-lg-4 ">
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Web</span>
@@ -68,7 +68,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6 md-margin col-lg-4">
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Backend</span>

@@ -23,7 +23,8 @@ const sendEmailController = (req, res) => {
       from: email,
       to: "coder.mahmud24@gmail.com",
       subject: "Sending Email From Portfolio",
-      html: `<h3>Message:: ${msg}</h3>`,
+      html: `<h3>Name:: ${name}</h3>
+      <h3>Message:: ${msg}</h3>`,
     };
 
     mailTransporter.sendMail(mailDetails, function (err, data) {

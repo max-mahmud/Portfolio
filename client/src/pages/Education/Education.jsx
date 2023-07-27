@@ -10,12 +10,12 @@ import "./Education.css";
 const Education = () => {
   return (
     <>
-    <div className=" education">
+    <div className=" education pb-3">
     <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
       Education Details
     </h2>
     <hr />
-    <VerticalTimeline>
+    <VerticalTimeline >
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: "white", color: "black" }}
