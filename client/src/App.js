@@ -8,6 +8,8 @@ import WorkExp from "./pages/WorkExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
 import { useTheme } from "./context/ThemeContext";
 import MobileNav from "./components/MobileNav/MobileNav";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [theme] = useTheme();
@@ -15,7 +17,8 @@ const App = () => {
   return (
     <>
       <div id={theme}>
-      <MobileNav />
+        <ToastContainer />
+        <MobileNav />
         <Layout />
         <div className="container">
           <About />

@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 const Contact = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [msg, setMsg] = useState();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (!name || !email || !msg) {
+        toast.error("Please Provide all fields");
+      }
+      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+        name,
+        email,
+        msg,
+      });
+      //validation success
+      if (res.data.success) {
+        toast.success(res.data.message);
+        setName("");
+        setEmail("");
+        setMsg("");
+      } else {
+        toast.error(res.data.message);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <div className="contact">
@@ -46,12 +77,16 @@ const Contact = () => {
                     <input
                       type="text"
                       name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       placeholder="Enter your Name"
                       className="mb-3"
                     />
                   </div>
                   <div className="row px-3">
                     <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       type="email"
                       name="email"
                       placeholder="Enter Your Email Address"
@@ -61,13 +96,15 @@ const Contact = () => {
                   <div className="row px-3">
                     <textarea
                       type="text"
+                      value={msg}
+                      onChange={(e) => setMsg(e.target.value)}
                       name="msg"
                       placeholder="Write your message"
                       className="mb-3"
                     />
                   </div>
                   <div className="row px-3">
-                    <button className="button" type="submit">
+                    <button onClick={handleSubmit} className="button" type="submit">
                       SEND MESSAGE
                     </button>
                   </div>
