@@ -88,6 +88,44 @@ button:focus {
   justify-content: space-between;
   align-items: center;
 }
+
+.card-flex {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-flex a {
+  color: #000;
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+/* ======================== */
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+  .contact .card2 {
+    margin: 0;
+  }
+
+  .contact .card2 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card1 .image {
+    padding: 20px 30px;
+    margin-top: 10px;
+
+  }
+}
+
+/* ============dark=========== */
 #dark .card0 {
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.15);
@@ -103,17 +141,7 @@ button:focus {
 #dark .card2 {
   color: #dadde4;
 }
-.card-flex {
-  margin-right: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card-flex a {
-  color: #000;
-  margin: 0 8px;
-  font-size: 20px;
-}
+
 #dark .card-flex a {
   color: #fff;
 }

@@ -23,6 +23,10 @@
     color: white;
     margin-top: 30px;
   }
-  /* #dark .sidebar-section{
-    background-color: #2f3542;
-  } */
+  
+/* ==== MOBILE VIEW ========== */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

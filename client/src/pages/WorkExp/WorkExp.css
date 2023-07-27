@@ -17,9 +17,6 @@
     width: 400px;
     margin: 10px auto;
   }
-  
-    /* ======== DARK MODE ========= */
-    
   .work-exp .vertical-timeline-element-title {
     color: #20bf6b;
   }
@@ -27,7 +24,23 @@
   .work-exp .vertical-timeline-element-subtitle {
     color: #1e1e2c78;
   }
+  
+  
+/* =================== */
 
+@media (max-width: 600px) {
+  .work {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .work hr {
+    width: 280px;
+  }
+}
+
+    /* ======== DARK MODE ========= */
+  
   #dark .work {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0.15);
